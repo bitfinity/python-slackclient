@@ -64,6 +64,9 @@ class Server(object):
     def __repr__(self):
         return self.__str__()
 
+    def set_token(self, token):
+        self.token = token
+
     def append_user_agent(self, name, version):
         self.api_requester.append_user_agent(name, version)
 
